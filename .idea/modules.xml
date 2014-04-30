@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BugTrackerX.iml" filepath="$PROJECT_DIR$/BugTrackerX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BugTrackerX-grailsPlugins.iml" filepath="$PROJECT_DIR$/BugTrackerX-grailsPlugins.iml" />
     </modules>
   </component>
 </project>
