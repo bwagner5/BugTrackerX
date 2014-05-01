@@ -33,7 +33,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><i class="fa fa-bolt"></i></a>
+                    <a class="navbar-brand" href="${createLink(uri: '/')}"><i class="fa fa-bolt"></i></a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <div class="navbar-left">
@@ -41,9 +41,9 @@
                         <b>User:</b> Vern Patton
                     </div>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="${(pageProperty(name:'meta.sub') =='bugscreate')?'active':''}"><a href="#contact">Report Bug</a></li>
-                        <li class="${(pageProperty(name:'meta.sub') =='bugsview')?'active':''}"><a href="#contact">View Bugs</a></li>
-                        <li class="${(pageProperty(name:'meta.sub') =='about')?'active':''}"><a href="#contact">About</a></li>
+                        <li class="${(pageProperty(name:'meta.sub') =='bugcreate')?'active':''}"><g:link controller="bug" action="create">Report Bug</g:link></li>
+                        <li class="${(pageProperty(name:'meta.sub') =='buglist')?'active':''}"><g:link controller="bug" action="index">View Bugs</g:link></li>
+                        <li class="${(pageProperty(name:'meta.sub') =='about')?'active':''}"><a href="#about">About</a></li>
                         <li class="${(pageProperty(name:'meta.sub') =='contact')?'active':''}"><a href="#contact">Contact</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
@@ -61,9 +61,7 @@
             </div> <!-- /container -->
         </div><!-- /hello -->
 
-        <div id="layoutBody" class="col-md-8 col-md-offset-2">
-            <g:layoutBody/>
-        </div>
+         <g:layoutBody/>
 
         <div class="footer" role="contentinfo"></div>
         <div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
