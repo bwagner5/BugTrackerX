@@ -90,8 +90,8 @@ a:after {
 .navbar {
 	font-weight: 800;
 	font-size: 14px;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 5px;
+	padding-bottom: 10px;
 	background-color: #ffffff;
 }
 
@@ -104,6 +104,10 @@ a:after {
 	font-size: 60px;
 	padding-top: 0px;
 	padding-bottom: 0px;
+}
+
+.navbar-text {
+    padding-bottom: 0px;
 }
 
 .btn-theme {
@@ -129,8 +133,8 @@ a:after {
 /* hello */
 #hello {
 	width: 100%;
-	padding-top: 15px;
-	padding-bottom: 250px;
+	padding-top: 5px;
+	padding-bottom: 10px;
 }
 
 #hello h1 {
@@ -211,6 +215,10 @@ a:after {
 	color: white;
 	text-align: right;
 	font-weight: 400;
+}
+
+#layoutBody {
+    padding-bottom: 75px;
 }
 
 /* Image Opacity */

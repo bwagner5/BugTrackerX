@@ -8,4 +8,9 @@ modules = {
     chartJs {
         resource url:'js/chart.js'
     }
+    dateTimePicker {
+        dependsOn('jquery')
+        resource url:'css/jquery.datetimepicker.css'
+        resource url:'js/jquery.datetimepicker.js'
+    }
 }

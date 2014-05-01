@@ -16,7 +16,8 @@
           <g:javascript src="respond.min.js" />
         <![endif]-->
         <g:layoutHead/>
-        <g:javascript library="core"/>
+        <r:require module="core"/>
+        <r:require module="dateTimePicker" />
         <g:javascript library="jquery" plugin="jquery"/>
         <r:layoutResources />
     </head>
@@ -35,14 +36,19 @@
                     <a class="navbar-brand" href="#"><i class="fa fa-bolt"></i></a>
                 </div>
                 <div class="navbar-collapse collapse">
+                    <div class="navbar-left">
+                        <b>Client:</b> First Energy Nuclear Operating Company <br />
+                        <b>User:</b> Vern Patton
+                    </div>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#contact">Contact</a></li>
+                        <li class="${(pageProperty(name:'meta.sub') =='bugscreate')?'active':''}"><a href="#contact">Report Bug</a></li>
+                        <li class="${(pageProperty(name:'meta.sub') =='bugsview')?'active':''}"><a href="#contact">View Bugs</a></li>
+                        <li class="${(pageProperty(name:'meta.sub') =='about')?'active':''}"><a href="#contact">About</a></li>
+                        <li class="${(pageProperty(name:'meta.sub') =='contact')?'active':''}"><a href="#contact">Contact</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
         </div>
-
-        <g:layoutBody/>
 
         <div id="hello">
             <div class="container">
@@ -54,6 +60,10 @@
                 </div><!-- /row -->
             </div> <!-- /container -->
         </div><!-- /hello -->
+
+        <div id="layoutBody" class="col-md-8 col-md-offset-2">
+            <g:layoutBody/>
+        </div>
 
         <div class="footer" role="contentinfo"></div>
         <div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
