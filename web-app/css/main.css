@@ -50,7 +50,7 @@ p {
 
 /* Links */
 a {
-    color: #f85c37;
+    color: #ffffff;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -228,3 +228,8 @@ a:after {
 .grid img:hover {
     opacity: 1;
 }
+
+.table td, tr {
+    color: #ffffff;
+}
+
