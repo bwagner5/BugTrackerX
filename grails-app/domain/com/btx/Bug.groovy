@@ -5,7 +5,7 @@ class Bug {
     Product product
     String version
     String description
-    String severity
+    Severity severity
     Date date
 
 
@@ -14,7 +14,7 @@ class Bug {
         product(nullable: false, blank: false)
         version(nullable: true, blank: true, maxSize: 100)
         description(nullable: false, blank: false, maxSize: 4000)
-        severity(nullable: false, blank: false, inlist: ['minor', 'moderate', 'major', 'critical'])
+        severity(nullable: false, blank: false)
     }
 
     public String toString(){

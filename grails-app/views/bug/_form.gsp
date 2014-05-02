@@ -25,7 +25,7 @@
 		<g:message code="bug.severity.label" default="Severity" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField class="form-control" name="severity" required="" value="${bugInstance?.severity}"/>
+	<g:select id="severity" name="severity.id" from="${com.btx.Severity.list()}" optionKey="id" required="" value="${bugInstance?.severity?.id}" class="form-control"/>
 
 </div>
 

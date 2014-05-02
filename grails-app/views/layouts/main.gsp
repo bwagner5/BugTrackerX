@@ -55,15 +55,23 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 centered">
                         <h1>Bug Tracker X</h1>
-                        <h2>REPORTING BUGS MADE SIMPLE</h2>
-                    </div><!-- /col-lg-8 -->
-                </div><!-- /row -->
-            </div> <!-- /container -->
-        </div><!-- /hello -->
+                        <h2><i class="fa fa-bug"></i> REPORTING BUGS MADE SIMPLE <i class="fa fa-bug"></i></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-         <g:layoutBody/>
+        <div id="green">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 bodyWhite">
+                        <g:layoutBody/>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <div class="footer" role="contentinfo"></div>
+        %{--<div class="footer centered" role="contentinfo">&copy; Brandon Wagner 2014</div>--}%
         <div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
         <r:layoutResources />
     </body>

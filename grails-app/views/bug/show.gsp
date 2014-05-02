@@ -45,7 +45,7 @@
 				<li class="fieldcontain">
 					<span id="severity-label" class="property-label"><g:message code="bug.severity.label" default="Severity" /></span>
 					
-						<span class="property-value" aria-labelledby="severity-label"><g:fieldValue bean="${bugInstance}" field="severity"/></span>
+						<span class="property-value" aria-labelledby="severity-label"><g:link controller="severity" action="show" id="${bugInstance?.severity?.id}">${bugInstance?.severity?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>
