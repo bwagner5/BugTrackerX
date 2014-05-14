@@ -1,3 +1,8 @@
+import com.btx.Client
+import com.btx.Product
+import com.btx.Severity
+
+
 class BootStrap {
 
     def init = { servletContext ->
